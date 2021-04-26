@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/trybe-wallet/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/trybe-wallet/static/js/main.dbd53f69.chunk.js",
-    "main.js.map": "/trybe-wallet/static/js/main.dbd53f69.chunk.js.map",
+    "main.css": "/trybe-wallet/static/css/main.bc6de6ac.chunk.css",
+    "main.js": "/trybe-wallet/static/js/main.9069c094.chunk.js",
+    "main.js.map": "/trybe-wallet/static/js/main.9069c094.chunk.js.map",
     "runtime-main.js": "/trybe-wallet/static/js/runtime-main.2e2bea36.js",
     "runtime-main.js.map": "/trybe-wallet/static/js/runtime-main.2e2bea36.js.map",
-    "static/js/2.bcf2cbf7.chunk.js": "/trybe-wallet/static/js/2.bcf2cbf7.chunk.js",
-    "static/js/2.bcf2cbf7.chunk.js.map": "/trybe-wallet/static/js/2.bcf2cbf7.chunk.js.map",
+    "static/css/2.d367a945.chunk.css": "/trybe-wallet/static/css/2.d367a945.chunk.css",
+    "static/js/2.e7e8cddf.chunk.js": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js",
+    "static/js/2.e7e8cddf.chunk.js.map": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js.map",
     "index.html": "/trybe-wallet/index.html",
-    "precache-manifest.535eec6b2af024a6dffd0a279a22a9f7.js": "/trybe-wallet/precache-manifest.535eec6b2af024a6dffd0a279a22a9f7.js",
+    "precache-manifest.ba72939e3bd3ef1286ddeaf278111267.js": "/trybe-wallet/precache-manifest.ba72939e3bd3ef1286ddeaf278111267.js",
     "service-worker.js": "/trybe-wallet/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/trybe-wallet/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.bcf2cbf7.chunk.js.LICENSE.txt": "/trybe-wallet/static/js/2.bcf2cbf7.chunk.js.LICENSE.txt"
+    "static/css/2.d367a945.chunk.css.map": "/trybe-wallet/static/css/2.d367a945.chunk.css.map",
+    "static/css/main.bc6de6ac.chunk.css.map": "/trybe-wallet/static/css/main.bc6de6ac.chunk.css.map",
+    "static/js/2.e7e8cddf.chunk.js.LICENSE.txt": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/trybe-wallet/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.2e2bea36.js",
-    "static/js/2.bcf2cbf7.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.dbd53f69.chunk.js"
+    "static/css/2.d367a945.chunk.css",
+    "static/js/2.e7e8cddf.chunk.js",
+    "static/css/main.bc6de6ac.chunk.css",
+    "static/js/main.9069c094.chunk.js"
   ]
 }
