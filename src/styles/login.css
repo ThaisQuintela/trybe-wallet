@@ -1,0 +1,22 @@
+.login-page {
+  background: linear-gradient(to top left, #041F60, #0476D0, #2CEEF0);
+}
+
+.login-form {
+  height: 60%;
+  max-width: 30%;
+}
+
+.logo {
+  opacity: 0.7;
+}
+
+.login {
+  background: linear-gradient(to top left, #041F60, #0476D0);
+  color: white !important;
+}
+
+input::placeholder {
+  font-family: FontAwesome;
+  /* https://stackoverflow.com/questions/17254339/font-awesome-unicode */
+}

@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import actionUser from '../../actions/user';
+import 'font-awesome/css/font-awesome.min.css';
+import logo from '../../images/logoTrybeWallet.png';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -12,6 +14,7 @@ class LoginForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
+      username: '',
       email: '',
       password: '',
       shouldRedirect: false,
@@ -33,40 +36,59 @@ class LoginForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const { email, password } = this.state;
+    const { username, email, password } = this.state;
     const { saveEmailAndPassword } = this.props;
-    saveEmailAndPassword(email, password);
+    saveEmailAndPassword(username, email, password);
     this.setState({ shouldRedirect: true });
   }
 
   render() {
     const { shouldRedirect } = this.state;
     if (shouldRedirect) return <Redirect to="/carteira" />;
-
     return (
-      <form onSubmit={ this.handleSubmit } autoComplete="on">
-        <input
-          data-testid="email-input"
-          placeholder="Email"
-          name="email"
-          id="email"
-          type="text"
-          onChange={ this.handleChange }
-        />
-        <input
-          data-testid="password-input"
-          placeholder="Senha"
-          name="password"
-          id="password"
-          type="text"
-          onChange={ this.handleChange }
-        />
-        <button
-          type="submit"
-          disabled={ !this.checkValidity() }
-        >
-          Entrar
-        </button>
+      <form
+        onSubmit={ this.handleSubmit }
+        autoComplete="on"
+        className="login-form container-fluid d-flex rounded shadow-lg my-auto bg-light"
+      >
+        <div className="d-flex flex-column m-4 m-auto">
+          <img src={ logo } alt="Trybe Wallet" className="logo d-block mb-3" />
+          <div className="form-floating mb-3">
+            <input
+              placeholder=" &#xf007; Name"
+              name="username"
+              id="name"
+              type="text"
+              className="form-control bg-transparent"
+              onChange={ this.handleChange }
+            />
+          </div>
+          <div className="form-floating mb-3">
+            <input
+              data-testid="email-input"
+              placeholder="&#xf0e0; Email Address"
+              name="email"
+              id="email"
+              type="text"
+              className="form-control bg-transparent"
+              onChange={ this.handleChange }
+            />
+          </div>
+          <div className="form-floating mb-3">
+            <input
+              data-testid="password-input"
+              placeholder=" &#xf023;  Password"
+              name="password"
+              id="password"
+              type="password"
+              className="form-control bg-transparent"
+              onChange={ this.handleChange }
+            />
+          </div>
+          <button type="submit" className="btn login" disabled={ !this.checkValidity() }>
+            Login
+          </button>
+        </div>
       </form>
     );
   }
@@ -77,7 +99,9 @@ LoginForm.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  saveEmailAndPassword: (email, password) => dispatch(actionUser(email, password)),
+  saveEmailAndPassword: (username, email, password) => dispatch(
+    actionUser(username, email, password),
+  ),
 });
 
 export default connect(null, mapDispatchToProps)(LoginForm);

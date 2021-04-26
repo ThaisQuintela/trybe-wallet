@@ -59,9 +59,10 @@ class EditForm extends Component {
     const { description, tag, method } = this.state;
     return (
       <>
-        <label htmlFor="method">
+        <label htmlFor="method" className="form-label">
           Método de Pagamento:
           <select
+            className="form-control form-control-sm form-select"
             name="method"
             id="method"
             value={ method }
@@ -73,9 +74,10 @@ class EditForm extends Component {
             <option>Cartão de débito</option>
           </select>
         </label>
-        <label htmlFor="tag">
+        <label htmlFor="tag" className="form-label">
           Tag:
           <select
+            className="form-control form-control-sm form-select"
             name="tag"
             id="tag"
             value={ tag }
@@ -89,9 +91,10 @@ class EditForm extends Component {
             <option>Saúde</option>
           </select>
         </label>
-        <label htmlFor="description-input">
+        <label htmlFor="description-input" className="form-label">
           Descrição:
           <input
+            className="form-control form-control-sm"
             name="description"
             value={ description }
             data-testid="description-input"
@@ -107,18 +110,20 @@ class EditForm extends Component {
     const { currency, value } = this.state;
     return (
       <>
-        <label htmlFor="value-input">
+        <label htmlFor="value-input" className="form-label">
           Valor:
           <input
+            className="form-control form-control-sm"
             name="value"
             value={ value }
             data-testid="value-input"
             onChange={ this.handleChange }
           />
         </label>
-        <label htmlFor="currency">
+        <label htmlFor="currency" className="form-label">
           Moeda:
           <select
+            className="form-control form-control-sm form-select"
             name="currency"
             id="currency"
             value={ currency }
@@ -131,14 +136,18 @@ class EditForm extends Component {
           </select>
         </label>
         {this.renderMethodTagDescriptionEdit()}
-        <button type="submit" onClick={ this.handleEdit }>Editar despesa</button>
+        <button type="submit" onClick={ this.handleEdit } className="btn btn-danger mt-3">
+          Editar despesa
+        </button>
       </>
     );
   }
 
   render() {
     return (
-      <div>
+      <div
+        className="container-fluid d-flex justify-content-between align-items-center mb-3"
+      >
         {this.renderInputEdit()}
       </div>
     );

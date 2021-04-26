@@ -57,9 +57,10 @@ class ExpenseForm extends Component {
   renderMethodTagDescription() {
     return (
       <>
-        <label htmlFor="method">
+        <label htmlFor="method" className="form-label">
           Método de Pagamento:
           <select
+            className="form-control form-control-sm form-select"
             name="method"
             id="method"
             data-testid="method-input"
@@ -70,9 +71,10 @@ class ExpenseForm extends Component {
             <option>Cartão de débito</option>
           </select>
         </label>
-        <label htmlFor="tag">
+        <label htmlFor="tag" className="form-label">
           Tag:
           <select
+            className="form-control form-control-sm form-select"
             name="tag"
             id="tag"
             data-testid="tag-input"
@@ -85,9 +87,10 @@ class ExpenseForm extends Component {
             <option>Saúde</option>
           </select>
         </label>
-        <label htmlFor="description-input">
+        <label htmlFor="description-input" className="form-label">
           Descrição:
           <input
+            className="form-control form-control-sm"
             name="description"
             data-testid="description-input"
             onChange={ this.handleChange }
@@ -101,17 +104,19 @@ class ExpenseForm extends Component {
     const { currencies } = this.props;
     return (
       <>
-        <label htmlFor="value-input">
+        <label htmlFor="value-input" className="form-label">
           Valor:
           <input
+            className="form-control form-control-sm"
             name="value"
             data-testid="value-input"
             onChange={ this.handleChange }
           />
         </label>
-        <label htmlFor="currency">
+        <label htmlFor="currency" className="form-label">
           Moeda:
           <select
+            className="form-control form-control-sm form-select"
             name="currency"
             id="currency"
             data-testid="currency-input"
@@ -123,7 +128,13 @@ class ExpenseForm extends Component {
           </select>
         </label>
         {this.renderMethodTagDescription()}
-        <button type="submit" onClick={ this.handleSubmit }>Adicionar despesa</button>
+        <button
+          type="submit"
+          onClick={ this.handleSubmit }
+          className="btn btn-success mt-2"
+        >
+          Adicionar despesa
+        </button>
       </>
     );
   }
@@ -131,7 +142,10 @@ class ExpenseForm extends Component {
   render() {
     const { edit } = this.props;
     return (
-      <form id="expenseForm">
+      <form
+        id="expenseForm"
+        className="container-fluid d-flex justify-content-between align-items-center mb-3"
+      >
         {(!edit)
           ? this.renderInput()
           : <EditForm />}

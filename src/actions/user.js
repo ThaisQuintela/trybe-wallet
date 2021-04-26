@@ -1,8 +1,9 @@
 import { USER } from './index';
 
-const actionUser = (email, password) => ({
+const actionUser = (username, email, password) => ({
   type: USER,
   payload: {
+    username,
     email,
     password,
   },

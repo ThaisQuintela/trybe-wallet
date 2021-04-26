@@ -25,12 +25,12 @@ class ExpenseTable extends Component {
   render() {
     const { expenses, deleteExpense, editExpense } = this.props;
     return (
-      <table className="expensesTable">
+      <table className="expensesTable container h-50 table table-hover">
         {this.renderHeadForm()}
-        <tbody>
+        <tbody className="">
           {expenses.length > 0 && expenses
             .map((expense) => (
-              <tr key={ expense.id }>
+              <tr key={ expense.id } className="rounded">
                 <td>{expense.description}</td>
                 <td>{expense.tag}</td>
                 <td>{expense.method}</td>
@@ -46,20 +46,22 @@ class ExpenseTable extends Component {
                     .toFixed(2)}
                 </td>
                 <td>Real</td>
-                <td>
+                <td className="d-flex">
                   <button
                     type="button"
                     data-testid="edit-btn"
+                    className="btn btn-info mx-2"
                     onClick={ () => editExpense(expense.id) }
                   >
-                    Editar
+                    <i className="far fa-edit" />
                   </button>
                   <button
                     type="button"
                     data-testid="delete-btn"
+                    className="btn btn-danger"
                     onClick={ () => deleteExpense(expense.id) }
                   >
-                    Excluir
+                    <i className="fas fa-trash" />
                   </button>
                 </td>
               </tr>

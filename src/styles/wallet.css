@@ -1,0 +1,36 @@
+.wallet-page {
+  min-height: 100vh;
+  background: linear-gradient(to top left, #041F60, #0476D0, #2CEEF0);
+  background-size: cover;
+}
+
+#expenseForm {
+  max-width: 1140px;
+}
+
+.user-info {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.username {
+  font-size: 1.5rem;
+}
+
+span {
+
+}
+
+label {
+  font-weight: 700;
+}
+
+thead, td, span, p, label {
+  color: white;
+  text-align: center;
+}
+
+i {
+  font-family: FontAwesome;
+  font-style: normal;
+}
