@@ -52,18 +52,18 @@ class LoginForm extends Component {
         className="login-form container-fluid d-flex rounded shadow-lg my-auto bg-light"
       >
         <div className="d-flex flex-column m-4 m-auto">
-          <img src={ logo } alt="Trybe Wallet" className="logo d-block mb-3" />
+          <img src={ logo } alt="Trybe Wallet" className="logo w-100 d-block mb-3" />
           <div className="form-floating mb-3">
             <input
               placeholder=" &#xf007; Name"
               name="username"
               id="name"
               type="text"
-              className="form-control bg-transparent"
+              className="form-control w-100 bg-transparent"
               onChange={ this.handleChange }
             />
           </div>
-          <div className="form-floating mb-3">
+          <div className="form-floating w-100 mb-3">
             <input
               data-testid="email-input"
               placeholder="&#xf0e0; Email Address"
@@ -74,7 +74,7 @@ class LoginForm extends Component {
               onChange={ this.handleChange }
             />
           </div>
-          <div className="form-floating mb-3">
+          <div className="form-floating w-100 mb-3">
             <input
               data-testid="password-input"
               placeholder=" &#xf023;  Password"
@@ -85,7 +85,7 @@ class LoginForm extends Component {
               onChange={ this.handleChange }
             />
           </div>
-          <button type="submit" className="btn login" disabled={ !this.checkValidity() }>
+          <button type="submit" className="btn login w-100" disabled={ !this.checkValidity() }>
             Login
           </button>
         </div>

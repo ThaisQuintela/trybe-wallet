@@ -7,7 +7,10 @@ import '../styles/wallet.css';
 class Wallet extends React.Component {
   render() {
     return (
-      <div className="wallet-page container-fluid d-flex flex-column m-0 p-0">
+      <div
+        className="wallet-page container-fluid vh-100 d-flex
+        flex-column m-0 p-0 table-responsive"
+      >
         <Header />
         <ExpenseForm />
         <ExpenseTable />

@@ -9,7 +9,10 @@ class Header extends Component {
     return (
       <header className="d-flex w-100 pt-4 flex-column">
         <img src={ logo } alt="Trybe Wallet" className="logo d-flex w-25 mx-auto" />
-        <div className="user-info d-flex justify-content-between align-items-center">
+        <div
+          className="user-info d-flex flex-wrap
+          justify-content-between align-items-center"
+        >
           <span className="username fs-2 m-3">{`Olá, ${username}!`}</span>
           <span data-testid="email-field" className="m-3">{`Email: ${email}`}</span>
           <div>

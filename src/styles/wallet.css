@@ -8,17 +8,17 @@
   max-width: 1140px;
 }
 
+.logo {
+  min-width: 25%;
+}
+
 .user-info {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .username {
   font-size: 1.5rem;
-}
-
-span {
-
 }
 
 label {
@@ -33,4 +33,10 @@ thead, td, span, p, label {
 i {
   font-family: FontAwesome;
   font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    min-width: 70%;
+  }
 }
