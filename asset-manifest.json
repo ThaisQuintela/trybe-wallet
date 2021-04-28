@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/trybe-wallet/static/css/main.bc6de6ac.chunk.css",
-    "main.js": "/trybe-wallet/static/js/main.9069c094.chunk.js",
-    "main.js.map": "/trybe-wallet/static/js/main.9069c094.chunk.js.map",
+    "main.css": "/trybe-wallet/static/css/main.8a8a6372.chunk.css",
+    "main.js": "/trybe-wallet/static/js/main.8cf91b51.chunk.js",
+    "main.js.map": "/trybe-wallet/static/js/main.8cf91b51.chunk.js.map",
     "runtime-main.js": "/trybe-wallet/static/js/runtime-main.2e2bea36.js",
     "runtime-main.js.map": "/trybe-wallet/static/js/runtime-main.2e2bea36.js.map",
     "static/css/2.d367a945.chunk.css": "/trybe-wallet/static/css/2.d367a945.chunk.css",
     "static/js/2.e7e8cddf.chunk.js": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js",
     "static/js/2.e7e8cddf.chunk.js.map": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js.map",
     "index.html": "/trybe-wallet/index.html",
-    "precache-manifest.ba72939e3bd3ef1286ddeaf278111267.js": "/trybe-wallet/precache-manifest.ba72939e3bd3ef1286ddeaf278111267.js",
+    "precache-manifest.257a5bf0f4a828303373a4e504e9960b.js": "/trybe-wallet/precache-manifest.257a5bf0f4a828303373a4e504e9960b.js",
     "service-worker.js": "/trybe-wallet/service-worker.js",
     "static/css/2.d367a945.chunk.css.map": "/trybe-wallet/static/css/2.d367a945.chunk.css.map",
-    "static/css/main.bc6de6ac.chunk.css.map": "/trybe-wallet/static/css/main.bc6de6ac.chunk.css.map",
+    "static/css/main.8a8a6372.chunk.css.map": "/trybe-wallet/static/css/main.8a8a6372.chunk.css.map",
     "static/js/2.e7e8cddf.chunk.js.LICENSE.txt": "/trybe-wallet/static/js/2.e7e8cddf.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/trybe-wallet/static/media/fontawesome-webfont.fee66e71.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.2e2bea36.js",
     "static/css/2.d367a945.chunk.css",
     "static/js/2.e7e8cddf.chunk.js",
-    "static/css/main.bc6de6ac.chunk.css",
-    "static/js/main.9069c094.chunk.js"
+    "static/css/main.8a8a6372.chunk.css",
+    "static/js/main.8cf91b51.chunk.js"
   ]
 }
