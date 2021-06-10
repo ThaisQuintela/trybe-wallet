@@ -8,14 +8,11 @@ class Header extends Component {
     const { username, email, expenses } = this.props;
     return (
       <header className="d-flex w-100 pt-4 flex-column">
-        <img src={ logo } alt="Trybe Wallet" className="logo d-flex w-25 mx-auto" />
-        <div
-          className="user-info d-flex flex-wrap
-          justify-content-between align-items-center"
-        >
+        <div className="user-info d-flex flex-wrap align-self-center">
+          <img src={ logo } alt="Trybe Wallet" className="logo d-flex w-25 mx-auto" />
           <span className="username fs-2 m-3">{`Olá, ${username}!`}</span>
           <span data-testid="email-field" className="m-3">{`Email: ${email}`}</span>
-          <div>
+          <div className="d-flex align-self-center">
             <span data-testid="total-field " className="m-3">
               Despesa Total:
               {expenses.length === 0 ? 0
