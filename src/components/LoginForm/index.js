@@ -25,7 +25,7 @@ class LoginForm extends Component {
     this.setState({ [name]: value });
   }
 
-  checkValidity() {
+  validate() {
     const { email, password } = this.state;
     const passwordLength = 6;
     if (password.length < passwordLength) return false;
@@ -42,6 +42,46 @@ class LoginForm extends Component {
     this.setState({ shouldRedirect: true });
   }
 
+  renderInputs() {
+    return (
+      <>
+        <img src={ logo } alt="Trybe Wallet" className="logo w-100 d-block my-3" />
+        <div className="form-floating mb-3">
+          <input
+            placeholder=" &#xf007; Name"
+            name="username"
+            id="name"
+            type="text"
+            className="form-control w-100 bg-transparent"
+            onChange={ this.handleChange }
+          />
+        </div>
+        <div className="form-floating w-100 mb-3">
+          <input
+            data-testid="email-input"
+            placeholder="&#xf0e0; Email Address"
+            name="email"
+            id="email"
+            type="text"
+            className="form-control bg-transparent"
+            onChange={ this.handleChange }
+          />
+        </div>
+        <div className="form-floating w-100 mb-3">
+          <input
+            data-testid="password-input"
+            placeholder=" &#xf023;  Password"
+            name="password"
+            id="password"
+            type="password"
+            className="form-control bg-transparent"
+            onChange={ this.handleChange }
+          />
+        </div>
+      </>
+    );
+  }
+
   render() {
     const { shouldRedirect } = this.state;
     if (shouldRedirect) return <Redirect to="/carteira" />;
@@ -52,40 +92,12 @@ class LoginForm extends Component {
         className="login-form container-fluid d-flex rounded shadow-lg my-auto bg-light"
       >
         <div className="d-flex flex-column m-4 m-auto">
-          <img src={ logo } alt="Trybe Wallet" className="logo w-100 d-block mb-3" />
-          <div className="form-floating mb-3">
-            <input
-              placeholder=" &#xf007; Name"
-              name="username"
-              id="name"
-              type="text"
-              className="form-control w-100 bg-transparent"
-              onChange={ this.handleChange }
-            />
-          </div>
-          <div className="form-floating w-100 mb-3">
-            <input
-              data-testid="email-input"
-              placeholder="&#xf0e0; Email Address"
-              name="email"
-              id="email"
-              type="text"
-              className="form-control bg-transparent"
-              onChange={ this.handleChange }
-            />
-          </div>
-          <div className="form-floating w-100 mb-3">
-            <input
-              data-testid="password-input"
-              placeholder=" &#xf023;  Password"
-              name="password"
-              id="password"
-              type="password"
-              className="form-control bg-transparent"
-              onChange={ this.handleChange }
-            />
-          </div>
-          <button type="submit" className="btn login w-100" disabled={ !this.checkValidity() }>
+          { this.renderInputs() }
+          <button
+            type="submit"
+            className="btn login w-100 text-white mt-3"
+            disabled={ !this.validate() }
+          >
             Login
           </button>
         </div>

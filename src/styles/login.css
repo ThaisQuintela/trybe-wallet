@@ -1,5 +1,5 @@
 .login-page {
-  background: linear-gradient(to top left, #041F60, #0476D0, #2CEEF0);
+  background: linear-gradient(to top left, #041f60, #0476d0, #2ceef0);
 }
 
 .login-form {
@@ -14,11 +14,10 @@
 }
 
 .login {
-  background: linear-gradient(to top left, #041F60, #0476D0);
-  color: white !important;
+  background: linear-gradient(to top left, #041f60, #0476d0);
 }
 
 input::placeholder {
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   /* https://stackoverflow.com/questions/17254339/font-awesome-unicode */
 }

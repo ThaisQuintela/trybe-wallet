@@ -1,10 +1,10 @@
 .wallet-page {
-  min-height: 100vh;
-  background: linear-gradient(to top left, #041F60, #0476D0, #2CEEF0);
+  background: linear-gradient(to top left, #041f60, #0476d0, #2ceef0);
   background-size: cover;
+  min-height: 100vh;
 }
 
-#expenseForm {
+.expenseForm {
   max-width: 1140px;
 }
 
@@ -13,29 +13,26 @@
 }
 
 .user-info {
-  max-width: 1140px;
   margin: 0 auto;
-}
-
-.username {
-  font-size: 1.5rem;
+  min-width: 85%;
 }
 
 label {
   font-weight: 700;
 }
 
-thead, td, span, p, label {
+thead , td , span , p , label {
   color: white;
   text-align: center;
 }
 
 i {
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   font-style: normal;
 }
 
-@media (max-width: 600px) {
+@media ( max-width : 600px ) {
+
   .logo {
     min-width: 70%;
   }

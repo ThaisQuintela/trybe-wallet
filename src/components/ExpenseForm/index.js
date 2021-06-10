@@ -144,7 +144,7 @@ class ExpenseForm extends Component {
     return (
       <form
         id="expenseForm"
-        className="container-fluid d-flex justify-content-between
+        className="expenseForm container-fluid d-flex justify-content-between
         align-items-center mb-3 flex-wrap"
       >
         {(!edit)
